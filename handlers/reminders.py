@@ -255,5 +255,6 @@ add_reminder_conv = ConversationHandler(
         CONFIRM: [CallbackQueryHandler(save_reminder_callback, pattern="^CONFIRM_")]
     },
     fallbacks=[CommandHandler("cancel", cancel_conversation)],
-    per_message=False
+    per_message=False,
+    per_chat=True
 )
