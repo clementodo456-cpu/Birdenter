@@ -254,5 +254,6 @@ add_reminder_conv = ConversationHandler(
         RECURRENCE: [CallbackQueryHandler(get_recurrence, pattern="^REC_")],
         CONFIRM: [CallbackQueryHandler(save_reminder_callback, pattern="^CONFIRM_")]
     },
-    fallbacks=[CommandHandler("cancel", cancel_conversation)]
+    fallbacks=[CommandHandler("cancel", cancel_conversation)],
+    per_message=False
 )
