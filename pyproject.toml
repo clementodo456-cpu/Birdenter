@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "birdenter"
+version = "0.1.0"
+description = "Telegram Reminder Bot"
+authors = ["clementodo456"]
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.13"
+python-telegram-bot = "^21.1.1"
+apscheduler = "^3.10.4"
+python-dotenv = "^1.0.1"
+pytz = "^2024.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
